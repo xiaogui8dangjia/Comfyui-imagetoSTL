@@ -1,0 +1,2 @@
+comfyui_imagetostl
+comfyui的一个简单节点，让灰度图转STL
