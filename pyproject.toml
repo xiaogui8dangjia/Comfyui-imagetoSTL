@@ -1,0 +1,15 @@
+[project]
+name = "imagetostl"
+description = "comfyui_imagetostl is a simple node for ComfyUI that converts grayscale images to STL."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/xiaogui8dangjia/Comfyui-imagetoSTL"
+#  Used by Comfy Registry https://registry.comfy.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "Comfyui-imagetoSTL"
+Icon = ""
+includes = []
