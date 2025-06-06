@@ -53,6 +53,10 @@ class ImageToSTLNode:
             # 创建 trimesh 对象
             mesh_obj = trimesh.Trimesh(vertices=vertices, faces=faces)
 
+            # 顺时针旋转 180 度（绕 Z 轴）
+            rotation_matrix = trimesh.transformations.rotation_matrix(np.radians(180), [0, 0, 1])
+            mesh_obj.apply_transform(rotation_matrix)
+
             # 处理文件名避免重复
             save_path = self.get_non_duplicate_path(save_path)
 
@@ -121,4 +125,3 @@ NODE_CLASS_MAPPINGS = {
 NODE_DISPLAY_NAME_MAPPINGS = {
     "ImageToSTLNode": "Image to STL Converter"
 }
-    
